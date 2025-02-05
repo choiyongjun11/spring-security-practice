@@ -41,7 +41,7 @@ import java.util.Optional;
 
     private final class HelloUserDetails extends Member implements UserDetails { //이 클래스에는 userDetails 인터페이스를 구현하고 있고 Member 엔티티 클래스를 상속받는다.
 
-        HelloUserDetails(Member member) {
+        public HelloUserDetails(Member member) {
             setMemberId(member.getMemberId());
             setFullName(member.getFullName());
             setEmail(member.getEmail());
